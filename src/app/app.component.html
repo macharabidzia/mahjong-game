@@ -1,0 +1,7 @@
+<div class='container'>
+  <h1 id="game-title">{{title}}</h1>
+  <div class='cards'>
+    <div class='card' *ngFor="let numberObject of randomNumbers" (click)="cardAnimation(numberObject)" [@fadeAnimation]='numberObject.isOpen ? "open" : "closed"'>{{numberObject.isOpen ? numberObject.number : ''}} </div>
+
+  </div>
+</div>
